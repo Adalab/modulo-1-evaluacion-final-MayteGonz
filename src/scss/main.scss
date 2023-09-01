@@ -1,5 +1,8 @@
-@import 'core/variables';
-@import 'core/reset';
-@import 'layout/page';
-@import 'layout/header';
-@import 'layout/footer';
+@import "core/reset";
+@import "core/variables";
+@import "core/mixin";
+@import "layout/header";
+@import "layout/hero";
+@import "layout/shop";
+@import "layout/start";
+@import "layout/footer";

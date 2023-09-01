@@ -1,0 +1,12 @@
+@mixin TitleFont($color, $size, $transform) {
+  font-family: $titles;
+  color: $color;
+  font-size: $size;
+  text-transform: $transform;
+}
+@mixin TextFont($color, $size, $transform) {
+  font-family: $txt;
+  color: $color;
+  font-size: $size;
+  text-transform: $transform;
+}

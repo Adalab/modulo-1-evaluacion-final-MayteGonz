@@ -1,0 +1,8 @@
+.articles {
+  &_article {
+    & img {
+      width: 114px;
+      height: 124px;
+    }
+  }
+}

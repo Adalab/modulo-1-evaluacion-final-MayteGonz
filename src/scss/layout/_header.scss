@@ -1,0 +1,10 @@
+.header {
+  background-color: $primaryColor;
+  position: fixed;
+  align-items: center;
+  height: 3.7rem;
+  width: 3.7rem;
+  &_img {
+    padding: 10px;
+  }
+}
