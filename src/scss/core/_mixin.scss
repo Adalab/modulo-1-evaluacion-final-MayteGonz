@@ -4,9 +4,10 @@
   font-size: $size;
   text-transform: $transform;
 }
-@mixin TextFont($color, $size, $transform) {
+@mixin TextFont($color, $size, $transform, $weight) {
   font-family: $txt;
   color: $color;
   font-size: $size;
   text-transform: $transform;
+  font-weight: $weight;
 }
