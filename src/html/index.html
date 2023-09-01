@@ -4,63 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Comienzos Compartidos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/favicon.svg" />
   </head>
-  <header>
-    <img src="./assets/images/burgerMenu.svg" alt="menu hamburguesa" />
-  </header>
+  <include src="./partials/header.html"></include>
   <main>
-    <section class="hero">
-      <h1>Comienzos Compartidos</h1>
-      <p>Todo lo que necesitan para volver al cole con ilusión</p>
-      <p><img src="./assets/images/iconBot.svg" alt="flecha hacia abajo" /></p>
-    </section>
-    <section class="shop">
-      <h2>historias,moda y ropa deportiva</h2>
-      <h3>tu tienda de deporte</h3>
-      <p>El deporte nos mantiene en forma. Nos mantiene alerta. Nuestra ropa deportiva para hombre y mujer te ofrece las últimas tecnologías, a la altura de tu rendimiento, para que superes tu mejor marca personal. </p>
-      <a href="#">Comprar</a>
-    </section>
-    <section class="start">
-      <p>Prepáralos con tus marcas favoritas</p>
-      <h4>Vuelta al cole</h4>
-      <div class="articles">
-      <article>
-        <img src="./assets/images/img1" alt="niña con una mochila">
-        <p>Mochilas escolares</p>
-      </article>
-      <article>
-        <img src="./assets/images/img2" alt="niño con un estuche">
-        <p>Estuches</p>
-      </article>
-      <article>
-        <img src="./assets/images/img3" alt="nicha con una bolsa de deporte">
-        <p>Bolsas de deporte</p>
-      </article>
-    </div>
-    <a href="#">Empezar ahora</a>
-
-    </section>
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/shop.html"></include>
+    <include src="./partials/start.html"></include>
   </main>
-  <footer>
-    <a href="#"><img src="./assets/images/iconTop.svg" alt="flecha hacia arriba"></a>
-    <nav>
-      <ul>
-        <li>Zapatillas</li>
-        <li>Ropa</li>
-        <li>Niño/a</li>
-        <li>Destacados</li>
-        <li>tips</li>
-      </ul>
-    </nav>
-    <ul>
-      <li>Twitter</li>
-      <li>Instagram</li>
-      <li>Youtube</li>
-    </ul>
-  </nav>
-  <p>&copy; 2023 we <span>&hearts; </span> run</p>
-  </footer>
+  <include src="./partials/footer.html"></include>
   <body></body>
 </html>
