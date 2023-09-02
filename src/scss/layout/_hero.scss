@@ -15,7 +15,6 @@
   &_h1 {
     @include TitleFont($white, 3rem, uppercase);
     line-height: 50px;
-    word-spacing: 50vw;
     word-spacing: 100vw;
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
   }

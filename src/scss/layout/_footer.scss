@@ -1,3 +1,42 @@
 .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding-bottom: 35px;
   background-color: $tertiarycolor;
+  &_top {
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    transform: translateY(-50%);
+  }
+  &_nav1,
+  &_nav2 {
+    text-align: center;
+    &-ul {
+      list-style: none;
+      & a {
+        display: block;
+        padding: 5px;
+        @include TextFont($white, 1.6rem, uppercase, $regular);
+        text-decoration: none;
+      }
+    }
+  }
+  &_copy {
+    text-align: center;
+    @include TextFont($white, 1.4rem, none, $regular);
+    .heart {
+      color: $primaryColor;
+      font-size: 1.6rem;
+    }
+    p {
+      padding: 5px;
+    }
+  }
 }
