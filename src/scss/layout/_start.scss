@@ -1,8 +1,37 @@
+.start {
+  background-color: $secundaryColor;
+  padding: 18px 12px 30px;
+  text-align: center;
+  &_h3 {
+    @include TitleFont(#626262, 1.2rem, none);
+  }
+  &_h4 {
+    @include TitleFont(black, 2rem, uppercase);
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+  &_button {
+    @include Button(184px, 48px);
+    background-color: $primaryColor;
+    @include TextFont($white, 2rem, none, $medium);
+    padding-top: 10px;
+  }
+}
+
 .articles {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   &_article {
-    & img {
-      width: 114px;
-      height: 124px;
+    &-img {
+      width: 115px;
+      height: 115px;
+      border-radius: 50%;
+    }
+    &-p {
+      @include TitleFont(black, 1.4rem, none);
+      padding-top: 5px;
+      padding-bottom: 15px;
     }
   }
 }

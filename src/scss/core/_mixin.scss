@@ -11,3 +11,11 @@
   text-transform: $transform;
   font-weight: $weight;
 }
+
+@mixin Button($width, $height) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  border-radius: 22.5px;
+  text-decoration: none;
+}

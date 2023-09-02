@@ -1,12 +1,12 @@
 .shop {
   background-color: $white;
-  padding: 34px 15px 20px;
+  padding: 34px 15px 25px;
   line-height: 30px;
 
   &_p1 {
     @include TextFont($primaryColor, 1.4rem, uppercase, $regular);
   }
-  &_h3 {
+  &_h2 {
     @include TitleFont(black, 2.2rem, uppercase);
     margin-bottom: 10px;
   }
@@ -17,13 +17,10 @@
   }
   &_buttom {
     margin-top: 40px;
-    display: block;
-    height: 35px;
-    width: 140px;
+    @include Button(160px, 45px);
     border: 2px solid $primaryColor;
-    border-radius: 22.5px;
     text-align: center;
-    text-decoration: none;
+    padding-top: 5px;
     @include TextFont($primaryColor, 2rem, none, $medium);
   }
 }
