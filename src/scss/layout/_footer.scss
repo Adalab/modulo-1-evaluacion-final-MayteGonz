@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 25px;
   padding-bottom: 35px;
   background-color: $tertiarycolor;
   &_top {
@@ -14,29 +13,49 @@
     text-align: center;
     line-height: 60px;
     transform: translateY(-50%);
+    border: solid 0 #979797;
   }
-  &_nav1,
-  &_nav2 {
-    text-align: center;
-    &-ul {
-      list-style: none;
-      & a {
-        display: block;
-        padding: 5px;
-        @include TextFont($white, 1.6rem, uppercase, $regular);
-        text-decoration: none;
+  &_list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      gap: 100px;
+    }
+    @media (min-width: 1280px) {
+      gap: 300px;
+    }
+    &-nav1,
+    &-nav2 {
+      text-align: center;
+      &-ul {
+        list-style: none;
+        & a {
+          display: block;
+          padding: 5px;
+          @include TextFont($white, 1.6rem, uppercase, $regular);
+          text-decoration: none;
+          @media (min-width: 768px) {
+            font-size: 1.6rem;
+          }
+        }
       }
     }
-  }
-  &_copy {
-    text-align: center;
-    @include TextFont($white, 1.4rem, none, $regular);
-    .heart {
-      color: $primaryColor;
-      font-size: 1.6rem;
-    }
-    p {
-      padding: 5px;
+    &-copy {
+      text-align: center;
+      @include TextFont($white, 1.4rem, none, $regular);
+      @media (min-width: 768px) {
+        order: -2;
+        font-size: 1.6rem;
+      }
+      .heart {
+        color: $primaryColor;
+        font-size: 1.6rem;
+      }
+      p {
+        padding: 5px;
+      }
     }
   }
 }
