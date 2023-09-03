@@ -2,6 +2,13 @@
   background-color: $secundaryColor;
   padding: 18px 12px 40px;
   text-align: center;
+  @media (min-width: 768px) {
+    padding: 27px 85px 50px;
+  }
+  @media (min-width: 1280px) {
+    padding-inline: 175px;
+  }
+
   &_h3 {
     @include TitleFont(#626262, 1.2rem, none);
   }
@@ -9,12 +16,22 @@
     @include TitleFont(black, 2rem, uppercase);
     padding: 5px;
     margin-bottom: 15px;
+    @media (min-width: 768px) {
+      font-size: 2.8rem;
+      margin-bottom: 22px;
+    }
+    @media (min-width: 1280px) {
+      margin-bottom: 25px;
+    }
   }
   &_button {
     @include Button(184px, 48px);
     background-color: $primaryColor;
     @include TextFont($white, 2rem, none, $medium);
     padding-top: 10px;
+    @media (min-width: 768px) {
+      margin-top: 28px;
+    }
   }
 }
 
@@ -22,16 +39,26 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
   &_article {
     &-img {
       width: 115px;
       height: 115px;
       border-radius: 50%;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     }
     &-p {
       @include TitleFont(black, 1.4rem, none);
       padding-top: 5px;
       padding-bottom: 15px;
+      @media (min-width: 768px) {
+        font-size: 1.8rem;
+      }
     }
+  }
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 50px;
   }
 }

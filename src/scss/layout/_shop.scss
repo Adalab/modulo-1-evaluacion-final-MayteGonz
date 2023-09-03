@@ -2,18 +2,37 @@
   background-color: $white;
   padding: 34px 15px 25px;
   line-height: 30px;
+  @media (min-width: 768px) {
+    padding: 37px 39px 51px;
+  }
+  @media (min-width: 1280px) {
+    padding: 39px 170px 59px;
+  }
 
   &_p1 {
     @include TextFont($primaryColor, 1.4rem, uppercase, $regular);
+    @media (min-width: 768px) {
+      font-size: 1.6rem;
+      padding-bottom: 10px;
+    }
   }
   &_h2 {
     @include TitleFont(black, 2.2rem, uppercase);
     margin-bottom: 10px;
+    @media (min-width: 768px) {
+      font-size: 3.2rem;
+      margin-bottom: 12px;
+    }
+    @media (min-width: 1280px) {
+      margin-bottom: 22px;
+    }
   }
   &_p2 {
     @include TextFont($tertiarycolor, 1.8rem, none, $regular);
     line-height: 30px;
-    padding-right: 20px;
+    @media (min-width: 768px) {
+      font-size: 2rem;
+    }
   }
   &_buttom {
     margin-top: 40px;
@@ -22,5 +41,11 @@
     text-align: center;
     padding-top: 5px;
     @include TextFont($primaryColor, 2rem, none, $medium);
+    @media (min-width: 768px) {
+      margin-top: 21px;
+    }
+    @media (min-width: 1280px) {
+      margin-top: 41px;
+    }
   }
 }
