@@ -23,6 +23,10 @@
     gap: 28px;
     width: 100%;
 
+    &-item {
+      width: 110px;
+    }
+
     @media (min-width: 768px) {
       flex-direction: row;
       justify-content: space-around;

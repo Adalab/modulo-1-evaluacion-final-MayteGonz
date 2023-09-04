@@ -51,7 +51,7 @@
     @include TextFont($primaryColor, 2rem, none, $medium);
 
     &:hover {
-      @include buttonAcction();
+      @include buttonAction();
     }
 
     @media (min-width: 768px) {
