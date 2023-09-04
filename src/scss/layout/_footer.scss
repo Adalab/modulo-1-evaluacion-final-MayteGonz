@@ -5,6 +5,7 @@
   justify-content: center;
   padding-bottom: 35px;
   background-color: $tertiarycolor;
+
   &_top {
     background-color: white;
     width: 45px;
@@ -15,17 +16,24 @@
     transform: translateY(-50%);
     border: solid 0 #979797;
   }
+
   &_list {
     display: flex;
     flex-direction: column;
     gap: 28px;
+    width: 100%;
+
     @media (min-width: 768px) {
       flex-direction: row;
-      gap: 100px;
+      justify-content: space-around;
+      padding-inline: 13rem;
+      margin-left: 20px;
     }
+
     @media (min-width: 1280px) {
-      gap: 300px;
+      padding-inline: 15rem;
     }
+
     &-nav1,
     &-nav2 {
       text-align: center;
@@ -42,6 +50,7 @@
         }
       }
     }
+
     &-copy {
       text-align: center;
       @include TextFont($white, 1.4rem, none, $regular);
