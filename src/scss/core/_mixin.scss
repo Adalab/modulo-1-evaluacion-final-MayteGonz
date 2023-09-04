@@ -4,6 +4,7 @@
   font-size: $size;
   text-transform: $transform;
 }
+
 @mixin TextFont($color, $size, $transform, $weight) {
   font-family: $txt;
   color: $color;
@@ -18,4 +19,9 @@
   height: $height;
   border-radius: 22.5px;
   text-decoration: none;
+}
+
+@mixin buttonAcction() {
+  transform: scale(1.2);
+  transition: all 500ms;
 }
