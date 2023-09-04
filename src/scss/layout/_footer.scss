@@ -35,6 +35,7 @@
   &_list {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 28px;
     width: 100%;
 
@@ -46,7 +47,7 @@
       flex-direction: row;
       justify-content: space-around;
       padding-inline: 13rem;
-      margin-left: 20px;
+      align-items: flex-start;
     }
 
     @media (min-width: 1280px) {
