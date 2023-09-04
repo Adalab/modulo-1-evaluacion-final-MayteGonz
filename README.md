@@ -8,4 +8,4 @@ Este ejercicio consiste en desarrollar una página web de acuerdo a un diseño q
 
 El diseño proporcionado es el siguiente:
 
-![./public/assets/images/version_tablet.png] 
+![Texto](./public/assets/images/version_tablet.png) 
